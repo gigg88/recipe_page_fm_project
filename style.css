@@ -1,0 +1,180 @@
+/*## Colors
+
+### Primary
+
+- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Fonts
+
+- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
+- Weights: 400
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 600, 700 --!>
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Young Serif", serif;
+    font-family: "Outfit", sans-serif;
+    
+}
+
+:root {
+
+    /* Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Primary */
+
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* Font-Weight */
+
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+  }
+
+  body{
+    width: 1440px;
+    height: 100vh;
+    line-height: 2rem;
+     
+  }
+
+  main {
+    margin: auto;
+    width: fit-content; /* Optional: Set a maximum width for responsiveness */
+  }
+  
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .introduction_text h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+ .preparation_text {
+    padding: 15px;
+    margin-top: 10px;
+    background-color:var(--rose-white);
+    
+ }
+
+ .preparation_text li {
+    margin-left: 15px;
+ }
+
+ .ingredients {
+    margin-bottom: 15px;
+ }
+
+ .ingredients h2{
+    margin-top: 15px;
+    margin-bottom: 10px;
+ }
+ .ingredients_list li, .instructions_text li {
+    margin-left: 20px;
+ }
+
+ .instructions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }
+
+ .instructions h2 {
+    margin-bottom: 10px;
+ }
+
+ .nutrition {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+ }
+
+ .nutrition h2 {
+    margin-bottom: 10px;
+    color: var(--dark-raspberry);
+ }
+
+ table {
+    /* General table styling */
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Collapse table borders */
+    margin: 20px auto; /* Add margin for spacing and centering */
+  }
+  
+  th, td {
+    /* Table cell styling */
+    border-bottom: 1px solid #ddd; /* Add a thin border to each cell */
+    padding: 10px; /* Add some padding for better readability */
+    text-align: left; /* Align content to the left */
+  }
+  
+  th {
+    /* Header row styling */
+    background-color: #f2f2f2; /* Light grey background for headers */
+    font-weight: bold; /* Make header text bold */
+  }
+
+  .td_right {
+    color: var(--dark-raspberry);
+  }
+  
+  h2, h3{
+    color: var(--dark-raspberry);
+  }
+
+  ol li::marker{
+    color: var(--dark-raspberry);
+    font-weight: bold;
+  }
+
+  ol li, ul li {
+    padding-left: 1.5em; /* Add left padding for the gap */
+  }
+
+  h1{
+    font-weight:var(--font-weight-bold);
+    font-size:50px;
+  }
+
+  hr {
+    color: var(--light-grey);
+  }
+
+
+
+
+
